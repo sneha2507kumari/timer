@@ -1,38 +1,66 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgb(115, 115, 230), rgb(123, 68, 123));
+}
+
+h1 {
+    color: white;
+    text-align: center; /* Center-align the text */
+}
+
+span {
+    color: violet;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+    width: 100%; /* Make the input field fill the container */
+    max-width: 300px; /* Default max-width */
+    padding: 10px; /* Add padding for better spacing */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    border: 1px solid white;
+    background-image: linear-gradient(rgb(115, 115, 230), rgb(123, 68, 123));
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    width: 100%; /* Make the button fill the container */
+    max-width: 300px; /* Default max-width */
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px solid white;
+    background-image: linear-gradient(rgb(49, 49, 143), rgb(212, 127, 141));
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.justgrid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center-align items */
 }
 
-.App-link {
-  color: #61dafb;
+.justgrid1 {
+    width: 100px;
+    height: 100px;
+    margin: 10px; /* Adjust margin */
+    align-items: center;
+    background-image: linear-gradient(rgb(49, 49, 143), rgb(212, 127, 141));
+    border-radius: 10px;
+    display: flex; /* Add display flex to align items */
+    justify-content: center; /* Center-align text */
+    text-align: center; /* Center-align text */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Media queries for different screen sizes */
+@media only screen and (min-width: 768px) {
+    input, button {
+        max-width: 500px; /* Adjust max-width for screens larger than 768px */
+    }
 }
